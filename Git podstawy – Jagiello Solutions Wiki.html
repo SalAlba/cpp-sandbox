@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy -->
+<html lang="pl" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Git podstawy – Jagiello Solutions Wiki</title>
+<meta name="generator" content="MediaWiki 1.24.1">
+<link rel="alternate" type="application/x-wiki" title="Edytuj" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit">
+<link rel="edit" title="Edytuj" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit">
+<link rel="shortcut icon" href="http://team.jagiellosolutions.pl/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://team.jagiellosolutions.pl/wiki/opensearch_desc.php" title="Jagiello Solutions Wiki (pl)">
+<link rel="EditURI" type="application/rsd+xml" href="http://team.jagiellosolutions.pl/wiki/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy">
+<link rel="alternate" type="application/atom+xml" title="Kanał Atom Jagiello Solutions Wiki" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Ostatnie_zmiany&amp;feed=atom">
+<link rel="stylesheet" href="./Git podstawy – Jagiello Solutions Wiki_files/load.php">
+<style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-css:7:869aa9133c31e6040d4830b259da96a8 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(http://team.jagiellosolutions.pl/wiki/resources/src/mediawiki.action/images/green-checkmark.png?2015-03-25T08:33:20Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-css:7:c6cab8d703de49d1fb818e5b86eaea07 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Git podstawy – Jagiello Solutions Wiki_files/load(1).php">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-css:7:c87aa0ca6915ec3b764f53b68044bfc8 */</style>
+<script src="./Git podstawy – Jagiello Solutions Wiki_files/load(2).php"></script><style type="text/css">:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{display:none !important;}</style><script src="./Git podstawy – Jagiello Solutions Wiki_files/load(3).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Git_podstawy","wgTitle":"Git podstawy","wgCurRevisionId":431,"wgRevisionId":431,"wgArticleId":58,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"Thorin86","wgUserGroups":["bureaucrat","sysop","*","user","autoconfirmed"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"pl","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"],"wgMonthNamesShort":["","sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"],"wgRelevantPageName":"Git_podstawy","wgUserId":1,"wgUserEditCount":225,"wgUserRegistration":1356293522000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"dmy","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":"1","extendwatchlist":0,"fancysig":"1","forceeditsummary":0,"gender":"male","hideminor":0,"hidepatrolled":0,"imagesize":"4","math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"Łukasz Jagiełło","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":"5","underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,
+"watchrollback":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"pl","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"timecorrection":"ZoneInfo|60|Europe/Warsaw","watchlisttoken":""});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"4ca4a1fcd8a64896bf98c064d53d1537+\\","patrolToken":"7acc132c1a12b10364496f91c1398b7f+\\","watchToken":"d754cf9c5be6c7ecf9d24014636237aa+\\"});},{},{});
+/* cache key: thorin86_wiki-wiki_:resourceloader:filter:minify-js:7:33954792cfc93899216b1854af78536c */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script><script src="./Git podstawy – Jagiello Solutions Wiki_files/load(4).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Git_podstawy skin-vector action-view vector-animateLayout" data-pinterest-extension-installed="cr1.39.1">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<h1 id="firstHeading" class="firstHeading" lang="pl"><span dir="auto">Git podstawy</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">Z Jagiello Solutions Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Skocz do:					<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#mw-navigation">nawigacji</a>, 					<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#p-search">wyszukiwania</a>
+				</div>
+				<div id="mw-content-text" lang="pl" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Spis treści</h2><span class="toctoggle">&nbsp;[<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#" id="togglelink">ukryj</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#0.29_Instalacja_i_konfiguracja_gita"><span class="tocnumber">1</span> <span class="toctext">0) Instalacja i konfiguracja gita</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#1.29_Inicjalizacja_GITa_lokalnie_i_wgranie_plik.C3.B3w_na_BB_.28na_laptopie.29"><span class="tocnumber">2</span> <span class="toctext">1) Inicjalizacja GITa lokalnie i wgranie plików na BB (na laptopie)</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#2.29_Inicjalizacja_GITa_i_pobranie_repo_z_BB"><span class="tocnumber">3</span> <span class="toctext">2) Inicjalizacja GITa i pobranie repo z BB</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#3.29_wgranie_zmian_na_serwer_.28normalne_git_add.2C_git_commit.2C_git_push.2C_tylko_mo.C5.BCe_z_opcj.C4.85_zadbania_o_znaki_ko.C5.84ca_lini.29.E2.80.8B"><span class="tocnumber">4</span> <span class="toctext">3) wgranie zmian na serwer (normalne git add, git commit, git push, tylko może z opcją zadbania o znaki końca lini)​</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#4.29_pobranie_zmian_z_serwera_i_zmergowanie"><span class="tocnumber">5</span> <span class="toctext">4) pobranie zmian z serwera i zmergowanie</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="0.29_Instalacja_i_konfiguracja_gita">0) Instalacja i konfiguracja gita</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit&amp;section=1" title="Edytuj sekcję: 0) Instalacja i konfiguracja gita">edytuj</a><span class="mw-editsection-bracket">]</span></span></h1>
+<ul><li> Ściągamy gita z <a rel="nofollow" class="external free" href="https://git-scm.com/">https://git-scm.com/</a></li></ul>
+<ul><li> Większosć opcji konfigurayjnych można zostawić tak jak proponuje to instalator, potrzebny nam w każdym razie skrót na pulpicie</li></ul>
+<ul><li> odpalamy skrót żeby zobaczyć jak małe okienko terminalu proponuje nam windows, ułatwi to ustalenie poprawnych wymiarów</li></ul>
+<ul><li> klikamy na skrót prawym przycikiem myszy, otwieramy właściwości, znajdujemy zakładkę "Układ"</li></ul>
+<ul><li> zmieniamy wymiary okna na takie które umożliwią wygodną pracę; wymiar nie jest podany w pikselach tylko w znakach alfanumerycznych. Ja np. mam 239 na 70</li></ul>
+<p><br>
+</p>
+<h1><span class="mw-headline" id="1.29_Inicjalizacja_GITa_lokalnie_i_wgranie_plik.C3.B3w_na_BB_.28na_laptopie.29">1) Inicjalizacja GITa lokalnie i wgranie plików na BB (na laptopie)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit&amp;section=2" title="Edytuj sekcję: 1) Inicjalizacja GITa lokalnie i wgranie plików na BB (na laptopie)">edytuj</a><span class="mw-editsection-bracket">]</span></span></h1>
+<ul><li> W folderze domowym (na ogół jest to <code>C:\Users\nazwa_usera</code> ) towrzymy pusty plik o nazwie <code>_netrc</code> (taka jest nazwa w Windowsie, jeśli ktoś ma linuksa to proszę o informację). Nie <code>_netrc.txt</code> tylko <code>_netrc</code>. Bez rozszerzenia. Do pliku wpisujemy poniższe:</li></ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="php source-php"><pre class="de1">machine bitbucket<span class="sy0">.</span>org
+login mój_login_na_bitbucket
+password moje_hasło_na_bitbucket</pre></div></div>
+<ul><li> <code>git init</code> w folderze z projektem</li></ul>
+<ul><li> <code>git add ścieżka_do_folderu</code>,<code>`git add ścieżka_do_innego_folderu_lub_pliku</code> dodajemy pliki i foldery do śledzenia</li></ul>
+<ul><li> <code>git commit -m "Pierwszy commit"</code> robimy pierwszy commit, opis może być rzecz jasna inny</li></ul>
+<ul><li> Na bitbuckecie wybrać z górnego paska "<code>Repositories</code>" i "<code>Create repository</code>"</li></ul>
+<ul><li> Bitbucket sam podpowie jak zacząć.</li></ul>
+<p>Wystarczy kliknąć na np. "<code>I have an existing project</code>"
+I dowiemy się że powinniśmy zrobić:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="php source-php"><pre class="de1">cd <span class="sy0">/</span>path<span class="sy0">/</span>to<span class="sy0">/</span>my<span class="sy0">/</span>repo
+git remote add origin tu_bitbucket_poda_link
+git push <span class="sy0">-</span>u origin <span class="sy0">--</span>all</pre></div></div>
+<p><br>
+</p>
+<h1><span class="mw-headline" id="2.29_Inicjalizacja_GITa_i_pobranie_repo_z_BB">2) Inicjalizacja GITa i pobranie repo z BB</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit&amp;section=3" title="Edytuj sekcję: 2) Inicjalizacja GITa i pobranie repo z BB">edytuj</a><span class="mw-editsection-bracket">]</span></span></h1>
+<ul><li> instalujemy gita, konfigurujemy gita, tworzymy _netrc</li></ul>
+<ul><li> Otwieramy git basha</li></ul>
+<ul><li> Przechodzimy do folderu w którym ma być folder z projektem (np. do "htdocs") folder z projektem ma jeszcze nie istnieć</li></ul>
+<ul><li> Otwieramy repo na bitbuckecie</li></ul>
+<ul><li> Wchodzimy w zakładkę "Overview"</li></ul>
+<ul><li> Odnajdujemy link do klonowania; Wygląda podobnie do <code><a rel="nofollow" class="external free" href="https://tsuma534@bitbucket.org/tsuma534/rolladen-panel.git">https://tsuma534@bitbucket.org/tsuma534/rolladen-panel.git</a></code> (To ten sam link który bitbucket podrzucił nam na początku, gdy wysyłaliśmy pierwszy commit)</li></ul>
+<ul><li> Kopiujemy link</li></ul>
+<ul><li> W gitbashu wpisujemy <code>git clone skopiowany_link_do_repo nazwa_folderu_z_projektem</code></li></ul>
+<ul><li> <code>cd nazwa_folderu_z_projektem</code></li></ul>
+<p><br>
+</p>
+<h1><span class="mw-headline" id="3.29_wgranie_zmian_na_serwer_.28normalne_git_add.2C_git_commit.2C_git_push.2C_tylko_mo.C5.BCe_z_opcj.C4.85_zadbania_o_znaki_ko.C5.84ca_lini.29.E2.80.8B">3) wgranie zmian na serwer (normalne git add, git commit, git push, tylko może z opcją zadbania o znaki końca lini)​</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit&amp;section=4" title="Edytuj sekcję: 3) wgranie zmian na serwer (normalne git add, git commit, git push, tylko może z opcją zadbania o znaki końca lini)​">edytuj</a><span class="mw-editsection-bracket">]</span></span></h1>
+<ul><li> jeśli pracuje jedna osoba i nie używa różnych edytorów z róznymi ustawieniami to nie powinna mieć problemów z zakonczeniami linii. Nie polecam tez kodzenia na boku, bez kontroli wersji. Poza tym trudno tutaj doradzić na zaś coś innego niż przesiadka na linuksa</li></ul>
+<ul><li> kodzimy kodzimy</li></ul>
+<ul><li> <code>git add ścieżka_do_pliku</code> dodajemy zmiany z plików z których zmiany nam się podobają</li></ul>
+<ul><li> <code>git commit -m "opis zmian, czy coś takiego"</code> commitujemy zmiany</li></ul>
+<ul><li> <code>git push</code> wysyłamy zmiany na bitbucket</li></ul>
+<p><br>
+</p>
+<h1><span class="mw-headline" id="4.29_pobranie_zmian_z_serwera_i_zmergowanie">4) pobranie zmian z serwera i zmergowanie</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit&amp;section=5" title="Edytuj sekcję: 4) pobranie zmian z serwera i zmergowanie">edytuj</a><span class="mw-editsection-bracket">]</span></span></h1>
+<ul><li> Jeśli pracuje jedna osoba i wykorzystuje gita w taki sposób jak opisujesz, to nie będzie miała potrzeby merdżować</li></ul>
+<ul><li> <code>git pull</code> powinno w tym układzie załatwić całą robotę</li></ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.088 seconds
+Real time usage: 0.136 seconds
+Preprocessor visited node count: 37/1000000
+Preprocessor generated node count: 64/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key thorin86_wiki-wiki_:pcache:idhash:58-0!*!*!!pl!*!* and timestamp 20160315220632 and revision id 431
+ -->
+</div>									<div class="printfooter">
+						Źródło „<a dir="ltr" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;oldid=431">http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;oldid=431</a>”					</div>
+													<div id="catlinks" class="catlinks catlinks-allhidden"></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menu nawigacyjne</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Osobiste</h3>
+						<ul>
+							<li id="pt-userpage"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=U%C5%BCytkownik:Thorin86" class="new" dir="auto" title="Moja osobista strona [alt-shift-.]" accesskey=".">Thorin86</a></li><li id="pt-mytalk"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Dyskusja_u%C5%BCytkownika:Thorin86" class="new" title="Moja strona dyskusji [alt-shift-n]" accesskey="n">Dyskusja</a></li><li id="pt-preferences"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Preferencje" title="Moje preferencje">Preferencje</a></li><li id="pt-watchlist"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Obserwowane" title="Lista stron obserwowanych przez Ciebie [alt-shift-l]" accesskey="l">Obserwowane</a></li><li id="pt-mycontris"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Wk%C5%82ad/Thorin86" title="Lista moich edycji [alt-shift-y]" accesskey="y">Edycje</a></li><li id="pt-logout"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Wyloguj&amp;returnto=Git+podstawy" title="Wyloguj">Wyloguj</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Przestrzenie nazw</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy" title="Zobacz stronę treści [alt-shift-c]" accesskey="c">Strona</a></span></li>
+															<li id="ca-talk" class="new"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Dyskusja:Git_podstawy&amp;action=edit&amp;redlink=1" title="Dyskusja o zawartości tej strony [alt-shift-t]" accesskey="t">Dyskusja</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0"><span>Warianty</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Widok</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy">Czytaj</a></span></li>
+															<li id="ca-edit"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=edit" title="Możesz edytować tę stronę. Przed zapisaniem zmian użyj przycisku podgląd. [alt-shift-e]" accesskey="e">Edytuj</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=history" title="Starsze wersje tej strony. [alt-shift-h]" accesskey="h">Wyświetl historię</a></span></li>
+															<li id="ca-unwatch" class="icon"><span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=unwatch&amp;token=98115bd34c33ba4dbe278f7c1d19bc0a%2B%5C" title="Usuń tę stronę z listy obserwowanych [alt-shift-w]" accesskey="w">Nie obserwuj</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label" tabindex="0"><span>Więcej</span><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+																	<li id="ca-delete">
+										<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=delete" title="Usuń tę stronę [alt-shift-d]" accesskey="d">Usuń</a>
+									</li>
+																	<li id="ca-move">
+										<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Przenie%C5%9B/Git_podstawy" title="Przenieś tę stronę. [alt-shift-m]" accesskey="m">Przenieś</a>
+									</li>
+																	<li id="ca-protect">
+										<a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=protect" title="Zabezpiecz tę stronę. [alt-shift-=]" accesskey="=">Zabezpiecz</a>
+									</li>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Szukaj</label>
+						</h3>
+
+						<form action="http://team.jagiellosolutions.pl/wiki/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Szukaj" title="Przeszukaj Jagiello Solutions Wiki [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Specjalna:Szukaj" name="title"><input type="submit" name="go" value="Przejdź" title="Przejdź do strony o dokładnie takim tytule, o ile istnieje" id="searchButton" class="searchButton">								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(/wiki/resources/assets/wiki.png);" href="http://team.jagiellosolutions.pl/wiki/index.php?title=Strona_g%C5%82%C3%B3wna" title="Strona główna"></a></div>
+						<div class="portal first" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Nawigacja</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Strona_g%C5%82%C3%B3wna" title="Przejdź na stronę główną [alt-shift-z]" accesskey="z">Strona główna</a></li>
+													<li id="n-recentchanges"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Ostatnie_zmiany" title="Lista ostatnich zmian na Jagiello Solutions Wiki. [alt-shift-r]" accesskey="r">Ostatnie zmiany</a></li>
+													<li id="n-randompage"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Losowa_strona" title="Pokaż stronę wybraną losowo [alt-shift-x]" accesskey="x">Losowa strona</a></li>
+													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="Tutaj możesz się dowiedzieć wielu rzeczy.">Pomoc</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Narzędzia</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Linkuj%C4%85ce/Git_podstawy" title="Pokaż listę wszystkich stron linkujących do tej strony [alt-shift-j]" accesskey="j">Linkujące</a></li>
+													<li id="t-recentchangeslinked"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Zmiany_w_linkowanych/Git_podstawy" title="Ostatnie zmiany w stronach, do których ta strona linkuje [alt-shift-k]" accesskey="k">Zmiany w linkowanych</a></li>
+													<li id="t-upload"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Prze%C5%9Blij" title="Prześlij plik [alt-shift-u]" accesskey="u">Prześlij plik</a></li>
+													<li id="t-specialpages"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Specjalna:Strony_specjalne" title="Lista wszystkich specjalnych stron [alt-shift-q]" accesskey="q">Strony specjalne</a></li>
+													<li id="t-print"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;printable=yes" rel="alternate" title="Wersja do wydruku [alt-shift-p]" accesskey="p">Wersja do druku</a></li>
+													<li id="t-permalink"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;oldid=431" title="Stały link do tej wersji strony">Link do tej wersji</a></li>
+													<li id="t-info"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Git_podstawy&amp;action=info">Informacje o tej stronie</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Tę stronę ostatnio zmodyfikowano o 15:51, 14 mar 2016.</li>
+											<li id="footer-info-viewcount">Tę stronę obejrzano 12 razy.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Jagiello_Solutions_Wiki:Zasady_zachowania_poufno%C5%9Bci" title="Jagiello Solutions Wiki:Zasady zachowania poufności">Zasady zachowania poufności</a></li>
+											<li id="footer-places-about"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Jagiello_Solutions_Wiki:O_Jagiello_Solutions_Wiki" title="Jagiello Solutions Wiki:O Jagiello Solutions Wiki">O Jagiello Solutions Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://team.jagiellosolutions.pl/wiki/index.php?title=Jagiello_Solutions_Wiki:Informacje_prawne" title="Jagiello Solutions Wiki:Informacje prawne">Informacje prawne</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+															<a href="http://www.mediawiki.org/"><img src="./Git podstawy – Jagiello Solutions Wiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.page.watch.ajax"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"http://team.jagiellosolutions.pl/wiki/load.php?debug=false\u0026amp;lang=pl\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script><script src="./Git podstawy – Jagiello Solutions Wiki_files/load(5).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":1513});
+}</script>
+	
+
+	<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
